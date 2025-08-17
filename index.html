@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeutralNest - Minimal Modern Clothing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://api.iconify.design/mdi/hanger.svg?color=%231A1A1A" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <img src="https://api.iconify.design/mdi/hanger.svg?color=%231A1A1A" alt="NeutralNest Logo" />
+        <span>NeutralNest</span>
+      </div>
+      <nav>
+        <a href="#home" class="nav-btn">Home</a>
+        <a href="#men" class="nav-btn">Men</a>
+        <a href="#women" class="nav-btn">Women</a>
+        <a href="#about" class="nav-btn">About</a>
+        <a href="#policy" class="nav-btn">Privacy</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+        <span class="cart-btn" id="cart-btn">
+          🛒 <span id="cart-count">0</span>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Discover Your Neutral</h1>
+    <p>50+ curated pieces for effortless, versatile style in calming hues and timeless silhouettes.</p>
+  </section>
+
+  <section class="products" id="men">
+    <h2>Men&rsquo;s Collection</h2>
+    <div class="product-list" id="men-products"></div>
+  </section>
+
+  <section class="products" id="women">
+    <h2>Women&rsquo;s Collection</h2>
+    <div class="product-list" id="women-products"></div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About NeutralNest</h2>
+    <p>
+      NeutralNest is a contemporary clothing destination specializing in minimal, neutral-tone apparel for modern living. Our mission is to provide thoughtfully curated, timeless basics and refined statement pieces that transcend seasons and fleeting trends.<br><br>
+      Every item is carefully selected for comfort, style, and versatility, using premium, ethically sourced materials. Whether you&rsquo;re dressing for work, leisure, or weekend escapes, NeutralNest helps you look and feel your best. Elevate your wardrobe—live simply, dress simply.
+    </p>
+  </section>
+
+  <section class="policy" id="policy">
+    <h2>Privacy &amp; Policy</h2>
+    <p>
+      At NeutralNest, your privacy is our priority.<br>
+      <ul>
+        <li>All personal information collected is solely for order processing and customer service.</li>
+        <li>We never sell or share your data with third parties for marketing purposes.</li>
+        <li>Cookies are used only for improving your site experience and cart functionality.</li>
+        <li>You may request data deletion or account removal at any time via our contact form.</li>
+        <li>We follow strict security measures to protect your information on our website.</li>
+      </ul>
+      For more information, please contact our support team.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" autocomplete="off">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <div id="size-modal" class="modal-bg" style="display:none;">
+    <div class="modal">
+      <button id="close-size-modal">&times;</button>
+      <h3>Clothing Size Chart</h3>
+      <table>
+        <tr><th>Size</th><th>Chest (in)</th><th>Waist (in)</th><th>Hip (in)</th></tr>
+        <tr><td>S</td><td>34-36</td><td>28-30</td><td>34-36</td></tr>
+        <tr><td>M</td><td>38-40</td><td>32-34</td><td>38-40</td></tr>
+        <tr><td>L</td><td>42-44</td><td>36-38</td><td>42-44</td></tr>
+        <tr><td>XL</td><td>46-48</td><td>40-42</td><td>46-48</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <span>© 2025 NeutralNest</span>
+      <span>Minimal, Modern Clothing for Every Body</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
